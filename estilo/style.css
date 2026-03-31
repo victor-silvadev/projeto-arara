@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+:root {
+    --fonteP: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteheader: "Titan One", sans-serif;
+    --fonteconteudo: "Caveat", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #8C7D70;
+    font-family: var(--fonteP);
+}
+
+header {
+    background-color: #0F168C;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonteheader);
+    font-size: 55px;
+    letter-spacing: 5px;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px  2px 0 #000,
+        2px  2px 0 #000;
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonteconteudo);
+    font-size: 3vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: brown;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.726);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem >p {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(35, 28, 134, 0.411);
+        text-shadow: 1px 2px 2px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/arara.jpg);
+}
+
+section#img02 {
+    background-image: url('../imagens/ararasvermelha.jpg');
+    background-position: right top;
+}
+
+footer {
+    background-color: #F2CB05;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
